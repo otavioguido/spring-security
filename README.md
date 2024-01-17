@@ -11,8 +11,9 @@ The project is separated in sections just as the course
 ## Table of content
 
 - [Requirements](#requirements)
-- [Section 1](#Section 1)
-- [Section 2](#section2)
+- [Section 1](#section-1)
+- [Section 2](#section-2)
+- [Section 3](#section-3)
 
 ## Requirements
 
@@ -33,5 +34,10 @@ It was also added credentials to the application.properties to use a specific cr
 ## Section 2
 
 Based on the module of the first section, I created a few endpoint and specified which one should be authenticated and which should not based on the SecurityFilterChain.
+
+## Section 3
+
+The course shows how to store credentials in memory which I didn't implement because it is deprecated due ot it isn't secure
+
 
 
