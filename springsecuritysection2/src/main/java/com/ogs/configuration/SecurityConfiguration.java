@@ -1,4 +1,4 @@
-package com.ogs.config;
+package com.ogs.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
