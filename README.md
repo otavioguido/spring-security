@@ -37,7 +37,7 @@ Based on the module of the first section, I created a few endpoint and specified
 
 ## Section 3
 
-The course shows how to store credentials in memory which I didn't implement because it is deprecated due ot it isn't secure
+The course shows how to store credentials in memory which I didn't implement because it is deprecated due to it isn't secure
 
 
 
