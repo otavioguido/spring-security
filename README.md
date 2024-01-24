@@ -39,5 +39,7 @@ Based on the module of the first section, I created a few endpoint and specified
 
 The course shows how to store credentials in memory which I didn't implement because it is deprecated due to it isn't secure
 
+Instead of making the AWS configuration passed in the course, I did a H2 with file persistence due to costs; 
+
 
 
