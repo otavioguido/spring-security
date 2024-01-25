@@ -1,0 +1,4 @@
+FROM openjdk:17-jdk-alpine
+arg JAR_FILE=target/*.jar
+copy ./target/springsecuritysection3-0.0.1-SNAPSHOT.jar app.jar
+entrypoint ["java","-jar","/app.jar"]

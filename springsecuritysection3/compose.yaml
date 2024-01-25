@@ -1,0 +1,33 @@
+version: "3"
+services:
+  springsecuritysection3:
+    container_name: springsecuritysection3
+    image: springsecuritysection3
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - springsecuritysection3-mysqldb
+    networks:
+      - springsecuritysection3-network
+    environment:
+      MYSQL_HOST: springsecuritysection3-mysqldb
+      MYSQL_PORT: 3306
+
+  springsecuritysection3-mysqldb:
+    container_name: springsecuritysection3-mysqldb
+    image: mysql:latest
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: gbankdb
+      MYSQL_USER: springsecuritysection3
+      MYSQL_PASSWORD: password
+    networks:
+      - springsecuritysection3-network
+    volumes:
+      - /home/otavio/Documents/spring-security/springsecuritysection3:/var/lib/mysql
+
+networks:
+  springsecuritysection3-network:
